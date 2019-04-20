@@ -43,6 +43,7 @@ See [Install Server on Windows]
     
     sudo vim /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py
     :%s/cleanup/reset/g #将两处cleanup替换为reset
+    :wq
     
 
 To run in the background:
