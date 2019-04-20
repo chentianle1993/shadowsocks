@@ -38,16 +38,17 @@ See [Install Server on Windows]
 
 ### Usage
 
+    此步报错解决办法: https://blog.csdn.net/blackfrog_unique/article/details/60320737
+    
+    sudo vim /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py
+    将两处cleanup替换为reset
+
     ssserver -p 443 -k password -m aes-256-cfb
 
 To run in the background:
 
     sudo ssserver -p 443 -k password -m aes-256-cfb --user nobody -d start
-    
-    报错解决办法: https://blog.csdn.net/blackfrog_unique/article/details/60320737
-    
-    sudo vim /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py
-    将两处cleanup替换为reset
+
 
 To stop:
 
