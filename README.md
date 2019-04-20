@@ -37,8 +37,9 @@ Windows:
 See [Install Server on Windows]
 
 ### Usage
+此步报错解决办法: 
 
-    此步报错解决办法: https://blog.csdn.net/blackfrog_unique/article/details/60320737
+    https://blog.csdn.net/blackfrog_unique/article/details/60320737
     
     sudo vim /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py
     将两处cleanup替换为reset
