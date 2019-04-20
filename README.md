@@ -44,8 +44,6 @@ See [Install Server on Windows]
     sudo vim /usr/local/lib/python2.7/dist-packages/shadowsocks/crypto/openssl.py
     将两处cleanup替换为reset
 
-    ssserver -p 443 -k password -m aes-256-cfb
-
 To run in the background:
 
     sudo ssserver -p 443 -k password -m aes-256-cfb --user nobody -d start
